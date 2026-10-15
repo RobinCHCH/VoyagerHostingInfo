@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the VoyagerHostingInfrastructure personal backup utility handles Google Drive data.">
+  <title>Privacy notice — VoyagerHostingInfrastructure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <a href="./">← VoyagerHostingInfrastructure</a>
+  <p class="eyebrow">Effective 15 October 2026</p>
+  <h1>Privacy notice</h1>
+  <p class="lead">Google Drive access is used for the owner's gateway backup and recovery.</p>
+  <p>This notice covers VoyagerHostingInfrastructure, a personal utility operated
+    by Robin Cox, and this informational website.</p>
+  <h2>Data accessed and purpose</h2>
+  <p>The utility uses Google OAuth and the <code>drive.file</code> permission. This
+    permits access to files it creates or that the account holder explicitly makes
+    available to it. Its intended use is limited to its own backup folders, archives,
+    checksums and harmless connection/recovery test files.</p>
+  <p>It uploads encrypted gateway archives and reads their contents and metadata
+    (such as names, identifiers, sizes and checksums) to verify transfers, list
+    available recovery points and restore backups. It can manage or delete its
+    backup files under the operator's retention decisions. No automatic deletion
+    policy is currently enabled. It does not scan unrelated Drive files.</p>
+  <h2>Storage and security</h2>
+  <p>Sensitive gateway archives are encrypted locally using age before transfer
+    to the operator's personal Google Drive. The private decryption key remains
+    with the operator, separate from the gateway and its cloud backups. Local
+    source snapshots and restored data are stored in protected operator-controlled
+    locations. Transfers use encrypted connections.</p>
+  <p>OAuth client details and access/refresh tokens are stored in restricted
+    configuration on the backup host to permit authorised transfers. Operational
+    records may include filenames, timestamps, checksums and error messages.
+    Credentials and private recovery keys are not published on this website.</p>
+  <h2>Sharing and use restrictions</h2>
+  <p>Google processes stored files and metadata as the chosen storage provider.
+    The operator and people explicitly authorised for recovery may handle backups
+    for that purpose. Data is not sold, used for advertising, or used to train AI
+    models. No other routine sharing is part of this utility.</p>
+  <p>VoyagerHostingInfrastructure's use and transfer of information received from
+    Google APIs will adhere to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    including its Limited Use requirements.</p>
+  <h2>Retention, deletion and withdrawal</h2>
+  <p>The operator retains backups for recovery and manages retention manually
+    until a retention policy is adopted. The account holder can delete cloud
+    copies through Google Drive and its Trash, and separately remove local copies.
+    Removing one copy does not remove copies held elsewhere.</p>
+  <p>Google access can be revoked through
+    <a href="https://myaccount.google.com/connections">Google Account connections</a>.
+    Revocation stops authorised future access but does not itself delete existing
+    backups. Losing the private recovery key prevents decryption of encrypted
+    archives.</p>
+  <h2>This website</h2>
+  <p>This static site has no sign-in, forms, advertising, analytics scripts or
+    site-set cookies. GitHub Pages hosts it and logs visitor IP addresses for
+    security purposes under the
+    <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
+    Linked services have their own privacy practices.</p>
+  <h2>Contact and changes</h2>
+  <p>For general questions, contact Robin Cox through the
+    <a href="https://github.com/RobinCHCH/VoyagerHostingInfo/issues">website repository's issues</a>.
+    Issues are public: do not post credentials, keys, backup contents or private
+    account details. Ask for a private channel if your enquiry requires one.</p>
+  <p>Material changes to data use will be reflected here and communicated to the
+    account holder before the new use; additional consent will be sought where
+    required.</p>
+  <footer><a href="./">Return to homepage</a></footer>
+</main>
+</body>
+</html>

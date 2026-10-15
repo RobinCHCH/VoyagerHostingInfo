@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Information about the personal VoyagerHostingInfrastructure gateway backup utility.">
+  <title>VoyagerHostingInfrastructure — Gateway backups</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="eyebrow">Personal infrastructure · Recovery</p>
+  <h1>VoyagerHostingInfrastructure</h1>
+  <p class="lead">Encrypted backups for a shared web gateway.</p>
+  <p>VoyagerHostingInfrastructure is a personal operational utility maintained by
+    Robin Cox. It uses rclone and Google Drive to store and retrieve encrypted
+    backups of gateway configuration and HTTPS certificate state for recovery.</p>
+  <h2>How Google Drive is used</h2>
+  <p>The operator explicitly authorises their own Google account. The utility
+    requests the limited <code>drive.file</code> permission to create, retrieve,
+    verify and manage its backup files. It does not request access to the whole
+    Drive, Gmail, contacts or calendars.</p>
+  <p>Sensitive gateway archives are encrypted before upload. The private recovery
+    key is kept separately by the operator. Google sign-in takes place through
+    Google's authorisation flow; this website never asks for a Google password.</p>
+  <h2>For the owner, not a public sign-up service</h2>
+  <p>This website provides information about the utility. There are no customer
+    accounts, sign-up forms or backup uploads here. The infrastructure source,
+    credentials and backup archives are not published on this site.</p>
+  <nav aria-label="Information"><a href="privacy.html">Privacy notice</a>
+    <a href="https://github.com/RobinCHCH/VoyagerHostingInfo/issues">Contact the maintainer</a></nav>
+  <p class="note">Contact issues are public. Do not include credentials, backup
+    contents, private keys or other private information.</p>
+  <footer>Maintained by Robin Cox · Updated 15 October 2026</footer>
+</main>
+</body>
+</html>
